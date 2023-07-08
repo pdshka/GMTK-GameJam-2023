@@ -35,4 +35,10 @@ public class BulbMobileController : MonoBehaviour
     {
         rigidbody.velocity = transform.forward * speed;
     }
+
+    public void ResetRotation()
+    {
+        yaw = 0.0f;
+        pitch = 0.0f;
+    }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7340832281220360810}
   - component: {fileID: 4653818625118701979}
   - component: {fileID: 2651806693688019242}
+  - component: {fileID: 3679728413364296316}
   m_Layer: 0
   m_Name: BrainWall
   m_TagString: Untagged
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3679728413364296316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447251395283564175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39dba4bcae95e1443a9b93b556a9b9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
