@@ -574,6 +574,7 @@ GameObject:
   - component: {fileID: 1406782444}
   - component: {fileID: 1406782446}
   - component: {fileID: 1406782445}
+  - component: {fileID: 1406782447}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -599,7 +600,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 70}
+  m_SizeDelta: {x: 1000, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406782445
 MonoBehaviour:
@@ -621,7 +622,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: jjjjjjjText
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -655,7 +656,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -698,6 +699,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406782443}
   m_CullTransparentMesh: 1
+--- !u!114 &1406782447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406782443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cbec5e38dba58d49aa47c0de3e5c8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue:
+  - Greetings, Sergant Bulbes! In light of recent events, you have an important mission
+    to complete!
+  - As you know, we are bulbers and it's our duty to bring enlightenment into the
+    dark human minds.
+  - As they say, when a light bulb goes off in someone's head, it's our doing, hehe...
+  - Look, this human walked into the room and forgot something important. You have
+    to deliver this bright thought into the main flash department of the brain.
+  - 'So, I give the green light to you, Sergant. Quick, get into the bulbmobile! 
+    But be careful: avoid obstacles and walls of brain flesh.'
+  - 'And remember, that there is always the light at the end of the tunnel. \nGood
+    luck! '
+  tmp: {fileID: 1406782445}
+  sp: {fileID: 1618119910}
 --- !u!1 &1456629808
 GameObject:
   m_ObjectHideFlags: 0
