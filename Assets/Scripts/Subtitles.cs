@@ -31,7 +31,7 @@ public class Subtitles : MonoBehaviour
                 tmp.text += frase[i];
                 yield return new WaitForSeconds(0.05f);
             }
-            yield return new WaitForSeconds(4.5f);
+            yield return new WaitForSeconds(2f);
             tmp.text = "";
         } 
         yield return ToBrainScene();
