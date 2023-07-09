@@ -26,7 +26,7 @@ public class CheckPointManager : MonoBehaviour
         StartCoroutine(Respawn());
         player.transform.position = current_checkpoint.transform.position;
         player.transform.localRotation = current_checkpoint.transform.localRotation;
-        bulb.ResetRotation();
+        bulb.ResetRotation(current_checkpoint.transform.localRotation);
         rigidbody.velocity = new Vector3();
     }
 

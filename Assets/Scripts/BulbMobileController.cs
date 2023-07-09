@@ -36,9 +36,9 @@ public class BulbMobileController : MonoBehaviour
         rigidbody.velocity = transform.forward * speed;
     }
 
-    public void ResetRotation()
+    public void ResetRotation(Quaternion rotation)
     {
-        yaw = 0.0f;
-        pitch = 0.0f;
+        yaw = rotation.y;
+        pitch = rotation.x;
     }
 }
