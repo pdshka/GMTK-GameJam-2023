@@ -38,7 +38,7 @@ public class BulbMobileController : MonoBehaviour
 
     public void ResetRotation(Quaternion rotation)
     {
-        yaw = rotation.y;
-        pitch = rotation.x;
+        yaw = rotation.eulerAngles.y;
+        pitch = rotation.eulerAngles.x;
     }
 }
