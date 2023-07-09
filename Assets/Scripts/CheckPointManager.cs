@@ -19,6 +19,7 @@ public class CheckPointManager : MonoBehaviour
     {
         rigidbody = player.GetComponent<Rigidbody>();
         bulb = player.GetComponent<BulbMobileController>();
+        bulb.ResetRotation(current_checkpoint.transform.localRotation);
     }
 
     public void TeleportToCheckPoint()
