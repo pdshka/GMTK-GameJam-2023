@@ -6,7 +6,7 @@ using TMPro;
 public class CheckPointManager : MonoBehaviour
 {
     [SerializeField] private float respawn_time = 0.5f;
-    [SerializeField] private Transform current_checkpoint;
+    [SerializeField] private GameObject current_checkpoint;
     [SerializeField] private GameObject player;
 
     [SerializeField] private GameObject text;
@@ -24,15 +24,15 @@ public class CheckPointManager : MonoBehaviour
     public void TeleportToCheckPoint()
     {
         StartCoroutine(Respawn());
-        player.transform.position = current_checkpoint.position;
-        player.transform.localRotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
+        player.transform.position = current_checkpoint.transform.position;
+        player.transform.localRotation = current_checkpoint.transform.localRotation;
         bulb.ResetRotation();
         rigidbody.velocity = new Vector3();
     }
 
-    public void SetCheckPoint(Transform transform)
+    public void SetCheckPoint(GameObject checkpoint)
     {
-        current_checkpoint = transform;
+        current_checkpoint = checkpoint;
         StartCoroutine(ShowNotification());
     }
 

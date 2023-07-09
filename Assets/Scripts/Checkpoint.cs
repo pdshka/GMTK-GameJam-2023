@@ -15,7 +15,7 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            manager.SetCheckPoint(transform);
+            manager.SetCheckPoint(gameObject);
             gameObject.SetActive(false);
         }
     }
