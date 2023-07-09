@@ -17,24 +17,24 @@ public class Subtitles : MonoBehaviour
     void Start()
     {
         StartCoroutine(PlayMonologue());
-        
     }
+    
+    public AudioSource audio_src;
     public IEnumerator PlayMonologue()
     {
         yield return new WaitForSeconds(10f);
         foreach (var frase in monologue)
         {
+            audio_src.Play();
             for (int i = 0; i < frase.Length; i++)
             {
-                //tmp.GetComponent<Text()
                 tmp.text += frase[i];
                 yield return new WaitForSeconds(0.05f);
             }
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(4.5f);
             tmp.text = "";
-        }
-
-        StartCoroutine(ToBrainScene());
+        } 
+        yield return ToBrainScene();
     }
 
     public IEnumerator ToBrainScene()
@@ -42,12 +42,10 @@ public class Subtitles : MonoBehaviour
         Color cl = sp.color;
         while (cl.a < 1f)
         {
-            cl.a -= 0.05f;
+            cl.a += 0.05f;
             sp.color = cl;
             yield return new WaitForSeconds(0.05f);
         }
         SceneManager.LoadScene("Brain");
     }
-
-
 }
